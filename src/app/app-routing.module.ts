@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PostsModule } from './posts/posts.module';
+import { PostsModule } from './posts-ngrx/posts.module';
 
 
 const routes: Routes = [
@@ -11,7 +11,7 @@ const routes: Routes = [
 
  {
     path: 'posts',
-    loadChildren: () => import("./posts/posts.module").then(module => PostsModule)
+    loadChildren: () => import("./posts-ngrx/posts.module").then(module => PostsModule)
   },
 
   // {

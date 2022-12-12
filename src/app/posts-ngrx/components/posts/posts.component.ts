@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { AppStateInterface } from 'src/app/types/app-state.interface';
+import { AppStateInterface } from 'src/app/types-global/app-state.interface';
 import * as PostsActions from '../../store/actions'
 import { errorSelector, isLoadingSelector, postsSelector } from '../../store/selectors';
 import { PostInterface } from '../../types/post.interface';

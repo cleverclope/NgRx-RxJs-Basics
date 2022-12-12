@@ -7,8 +7,8 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EffectsModule } from '@ngrx/effects';
-import { PostsComponent } from './posts/components/posts/posts.component';
-import { PostsModule } from './posts/posts.module';
+import { PostsComponent } from './posts-ngrx/components/posts/posts.component';
+import { PostsModule } from './posts-ngrx/posts.module';
 
 @NgModule({
   declarations: [
