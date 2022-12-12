@@ -9,11 +9,14 @@ import { AppComponent } from './app.component';
 import { EffectsModule } from '@ngrx/effects';
 import { PostsComponent } from './posts-ngrx/components/posts/posts.component';
 import { PostsModule } from './posts-ngrx/posts.module';
+import { UsersComponent } from './users-rxjs/components/users/users.component';
+import { UsersModule } from './users-rxjs/users.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
+    UsersComponent,
 
   ],
   imports: [
@@ -21,6 +24,7 @@ import { PostsModule } from './posts-ngrx/posts.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     PostsModule,
+    UsersModule,
     StoreModule.forRoot({}),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
     EffectsModule.forRoot()

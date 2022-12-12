@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PostsModule } from './posts-ngrx/posts.module';
+import { UsersModule } from './users-rxjs/users.module';
 
 
 const routes: Routes = [
   { path: '',
-    redirectTo:"posts",
+    redirectTo:"users",
     pathMatch:"full"
   },
 
@@ -14,10 +15,11 @@ const routes: Routes = [
     loadChildren: () => import("./posts-ngrx/posts.module").then(module => PostsModule)
   },
 
-  // {
-  //   path: 'Auth',
-  //   loadChildren: () => import("./auth/modules/auth.module").then(module => AuthModule)
-  // },
+  {
+    path: 'users',
+    loadChildren: () => import("./users-rxjs/users.module").then(module => UsersModule)
+  },
+
 ]
 
 @NgModule({
