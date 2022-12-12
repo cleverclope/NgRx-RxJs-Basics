@@ -1,1 +1,16 @@
-<p>users works!</p>
+   <p>Using of</p>
+    <div *ngFor="let user of users">
+      {{ user.name }}
+    </div>
+
+    <br/>
+    <p>Using map</p>
+    <div *ngFor="let username of usernames$ | async">
+        {{ username }} {{ username}}
+      </div>
+
+      <br/>
+      <p>Using filter</p>
+      <div *ngFor="let userr of filteredUsers$ | async">
+        {{ userr.name }} {{ userr.name}} {{ userr.name}}
+      </div>
